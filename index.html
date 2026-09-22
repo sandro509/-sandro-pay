@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandro Pay</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 5px;
+      color: #bbb;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    button {
+      background: #111;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    .balance {
+      background: #111;
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .balance h3 {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .balance p {
+      font-size: 30px;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>SANDRO PAY</h1>
+    <p>Paiement simple et rapide</p>
+  </header>
+
+  <div class="container">
+
+    <div class="balance">
+      <h3>Votre solde</h3>
+      <p>0.00 HTG</p>
+    </div>
+
+    <div class="card">
+      <h2>Effectuer un paiement</h2>
+
+      <input type="text" placeholder="Nom du destinataire">
+
+      <input type="tel" placeholder="Numéro de téléphone">
+
+      <input type="number" placeholder="Montant en HTG">
+
+      <select>
+        <option>Choisir le mode de paiement</option>
+        <option>MonCash</option>
+        <option>NatCash</option>
+        <option>Carte bancaire</option>
+      </select>
+
+      <button onclick="payer()">Payer maintenant</button>
+    </div>
+
+    <footer>
+      © 2026 Sandro Pay — Tous droits réservés.
+    </footer>
+
+  </div>
+
+  <script>
+    function payer() {
+      alert("Paiement enregistré avec succès !");
+    }
+  </script>
+
+</body>
+</html>
