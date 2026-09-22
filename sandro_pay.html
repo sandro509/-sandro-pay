@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandro Pay</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f6f8;color:#111}
+header{background:#111;color:white;padding:28px 20px 34px;border-radius:0 0 28px 28px}
+.logo{font-size:28px;font-weight:800}.tag{opacity:.7;margin-top:5px}
+.balance{background:white;color:#111;margin-top:24px;padding:20px;border-radius:18px}
+.label{font-size:13px;color:#777}.amount{font-size:32px;font-weight:800;margin-top:5px}
+main{padding:20px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+button{border:0;border-radius:16px;padding:18px;font-size:16px;font-weight:700;background:white;box-shadow:0 3px 12px #00000010}
+button.primary{background:#111;color:white}
+.section{margin-top:24px;font-size:20px;font-weight:800}
+.card{background:white;border-radius:18px;padding:18px;margin-top:12px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #eee}
+.row:last-child{border-bottom:0}
+.small{font-size:13px;color:#777}
+.badge{padding:7px 10px;border-radius:10px;background:#eef8f0;color:#16823b;font-size:12px;font-weight:700}
+.notice{font-size:13px;color:#666;line-height:1.5;margin-top:18px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SANDRO PAY</div>
+  <div class="tag">Wallet & paiement — prototype</div>
+  <div class="balance">
+    <div class="label">Solde disponible</div>
+    <div class="amount">0.00 USD</div>
+  </div>
+</header>
+
+<main>
+  <div class="grid">
+    <button class="primary" onclick="alert('Écran Dépôt — à connecter à un fournisseur de paiement officiel.')">➕ Déposer</button>
+    <button onclick="alert('Écran Retrait — à connecter à un fournisseur de paiement officiel.')">💸 Retirer</button>
+    <button onclick="alert('MonCash — intégration API officielle à configurer.')">📱 MonCash</button>
+    <button onclick="alert('NatCash — intégration API officielle à configurer.')">📲 NatCash</button>
+  </div>
+
+  <div class="section">Moyens de paiement</div>
+  <div class="card">
+    <div class="row"><div><b>💳 Carte bancaire</b><div class="small">Ajouter une carte</div></div><span>›</span></div>
+    <div class="row"><div><b>📱 MonCash</b><div class="small">Non connecté</div></div><span>›</span></div>
+    <div class="row"><div><b>📲 NatCash</b><div class="small">Non connecté</div></div><span>›</span></div>
+  </div>
+
+  <div class="section">Dernières transactions</div>
+  <div class="card">
+    <div class="row"><div><b>Aucune transaction</b><div class="small">Ton historique apparaîtra ici.</div></div><span class="badge">—</span></div>
+  </div>
+
+  <p class="notice">Prototype uniquement : ce fichier ne traite pas d'argent réel et ne collecte pas de numéros de carte, mots de passe ou codes de paiement. Pour les paiements réels, il faudra un serveur sécurisé et les intégrations officielles des prestataires.</p>
+</main>
+</body>
+</html>
